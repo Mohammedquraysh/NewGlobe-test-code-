@@ -5,7 +5,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity(tableName = "Pupils")
-class Pupil(
+data class Pupil(
         @PrimaryKey
         @ColumnInfo(name = "pupil_id")
         val pupilId: Long,
@@ -13,8 +13,8 @@ class Pupil(
         @ColumnInfo(name = "name")
         val name: String,
 
-        @ColumnInfo(name = "country")
-        val value: String,
+        @ColumnInfo(name = "value")
+        val value: String? = null,
 
         @ColumnInfo(name = "image")
         val image: String,
@@ -26,6 +26,6 @@ class Pupil(
         val longitude: Double
 )
 
-class PupilList(
-        val items: MutableList<Pupil>
+data class PupilList(
+        val items: List<Pupil>
 )

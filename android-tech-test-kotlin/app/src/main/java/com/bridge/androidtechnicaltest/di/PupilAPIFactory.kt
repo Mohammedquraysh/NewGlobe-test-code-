@@ -33,6 +33,7 @@ object PupilAPIFactory {
         }
         builder.addInterceptor(requestInterceptor)
 
+
         return Retrofit.Builder()
                 .baseUrl(BASE_URL)
                 .client(builder.build())

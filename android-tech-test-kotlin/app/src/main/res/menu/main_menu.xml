@@ -6,4 +6,20 @@
         android:id="@+id/action_reset"
         app:showAsAction="never"
         android:title="@string/sync"/>
+
+
+    <item
+        android:id="@+id/create_pupil"
+        app:showAsAction="never"
+        android:title="@string/create_pupil_text"/>
+
+    <item
+        android:id="@+id/get_pupil_detail"
+        app:showAsAction="never"
+        android:title="@string/get_pupil_info_text"/>
+
+    <item
+        android:id="@+id/delete_pupil"
+        app:showAsAction="never"
+        android:title="@string/delete_pupil_text"/>
 </menu>

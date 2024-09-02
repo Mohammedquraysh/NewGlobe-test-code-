@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+
+	<TextView
+		android:id="@+id/pupil_name"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:textAppearance="?attr/textAppearanceListItem"
+		android:textSize="18sp"
+		android:textStyle="bold"
+		android:layout_marginHorizontal="30dp"
+		android:layout_marginTop="20dp"
+		android:textColor="@color/colorPrimaryDark"
+		android:text="Pupil List" />
 
 	<androidx.recyclerview.widget.RecyclerView
 		android:id="@+id/pupil_list"
+		android:layout_marginTop="20dp"
+		android:layout_marginHorizontal="30dp"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent" />
 

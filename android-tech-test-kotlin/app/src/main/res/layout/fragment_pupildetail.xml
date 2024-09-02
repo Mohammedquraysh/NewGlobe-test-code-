@@ -1,20 +1,46 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:gravity="center_horizontal"
-			  android:padding="@dimen/activity_horizontal_margin">
+	xmlns:tools="http://schemas.android.com/tools"
+	android:orientation="vertical"
+	android:layout_marginTop="30dp"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="@dimen/activity_horizontal_margin">
 
-	<ImageView
-		android:id="@+id/pupil_image"
-		android:layout_width="80dp"
-		android:layout_height="80dp"/>
 
-	<LinearLayout
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Pupil ID"
+		android:textStyle="bold"
+		android:paddingBottom="8dp"/>
+
+	<EditText
+		android:id="@+id/et_pupilID"
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
+		android:hint="Enter the Pupil ID"
+		android:inputType="text"/>
+
+
+
+	<Button
+		android:id="@+id/btn_get_pupil"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="50dp"
+		android:text="Get Pupil"
+		android:layout_marginHorizontal="20dp"
+		android:backgroundTint="@color/colorPrimaryDark"
+		android:textColor="@android:color/white"/>
+
+	<LinearLayout
+		android:id="@+id/layout_items"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="40dp"
+		android:visibility="gone"
 		android:orientation="horizontal">
 
 		<TextView
@@ -37,6 +63,7 @@
 	<LinearLayout
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
+		android:id="@+id/layout_items_three"
 		android:orientation="horizontal">
 
 		<TextView
@@ -59,6 +86,8 @@
 	<LinearLayout
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
+		android:visibility="gone"
+		android:id="@+id/layout_items_two"
 		android:orientation="horizontal">
 
 		<TextView
@@ -75,6 +104,22 @@
 			android:layout_height="wrap_content"
 			android:layout_weight="1"
 			tools:text="India"/>
+
+		<TextView
+			style="@style/TextDetail"
+			android:id="@+id/lat"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			tools:text="0.00"/>
+
+		<TextView
+			style="@style/TextDetail"
+			android:id="@+id/longitude"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			tools:text="0.00"/>
 
 	</LinearLayout>
 
